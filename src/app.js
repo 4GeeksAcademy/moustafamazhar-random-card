@@ -2,10 +2,22 @@
 import "bootstrap";
 import "./style.css";
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
-
 window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
+  // console.log("Hello from the console!");
+
+  const suites = ["heart", "spade", "club", "tree"];
+
+  function randomCard(arr) {
+    return Math.floor(Math.random() * arr.length);
+  }
+  let suite = suites[randomCard(suites)];
+  console.log(suite);
+
+  let topsuite = document.querySelector("suit-top");
+  topsuite.innerHTML = suite;
+};
+
+let bottomsuite =  document.querySelector("suit-bottom");
+bottomsuite.innerHTML = suite;
+
 };

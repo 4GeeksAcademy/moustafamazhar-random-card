@@ -1,1 +1,23 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background-color: green;
+}
+
+.card {
+  margin: 0 auto;
+  float: none;
+  margin-bottom: 10px;
+}
+
+.suit-top {
+  display: flex;
+  justify-content: start;
+}
+
+.suit-bottom {
+  transform: rotate(180deg);
+  display: flex;
+  padding-top: 50px;
+  justify-items: right;
+}

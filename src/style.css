@@ -15,9 +15,6 @@ body {
   justify-content: start;
 }
 
-.suit-bottom {
+.icon-bottom {
   transform: rotate(180deg);
-  display: flex;
-  padding-top: 50px;
-  justify-items: right;
 }

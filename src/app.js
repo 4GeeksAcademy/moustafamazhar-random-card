@@ -9,21 +9,24 @@ window.onload = function() {
   function randomCard(arr) {
     return Math.floor(Math.random() * arr.length);
   }
-  let suite = suites[randomCard(suites)];
+  function updateCard() {
+    let suite = suites[randomCard(suites)];
+    let values = cardValues[randomCard(cardValues)];
 
-  let values = cardValues[randomCard(cardValues)];
+    let middlesuite = document.querySelector(".icon-middle");
+    middlesuite.innerHTML = values;
 
-  let middlesuite = document.querySelector(".icon-middle");
-  middlesuite.innerHTML = values;
-
-  let topsuite = document.querySelector(".icon-top");
-  topsuite.innerHTML = suite;
-  if (suite === "♥" || suite === "♦") {
-    topsuite.style.color = "red";
+    let topsuite = document.querySelector(".icon-top");
+    topsuite.innerHTML = suite;
+    if (suite === "♥" || suite === "♦") {
+      topsuite.style.color = "red";
+    }
+    let bottomsuite = document.querySelector(".icon-bottom");
+    bottomsuite.innerHTML = suite;
+    if (suite === "♥" || suite === "♦") {
+      bottomsuite.style.color = "red";
+    }
   }
-  let bottomsuite = document.querySelector(".icon-bottom");
-  bottomsuite.innerHTML = suite;
-  if (suite === "♥" || suite === "♦") {
-    bottomsuite.style.color = "red";
-  }
+  updateCard();
+  setInterval(updateCard, 5000);
 };

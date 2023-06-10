@@ -7,14 +7,14 @@ body {
 .card {
   margin: 0 auto;
   float: none;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
 
-.suit-top {
-  display: flex;
-  justify-content: start;
+.icon-top {
+  padding: 0 0 0 10px;
 }
 
 .icon-bottom {
   transform: rotate(180deg);
+  padding: 0 0 0 10px;
 }

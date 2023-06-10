@@ -3,8 +3,6 @@ import "bootstrap";
 import "./style.css";
 
 window.onload = function() {
-  // console.log("Hello from the console!");
-
   const suites = ["♥", "♠", "♣", "♦"];
 
   function randomCard(arr) {
@@ -13,9 +11,9 @@ window.onload = function() {
   let suite = suites[randomCard(suites)];
   console.log(suite);
 
-  let topsuite = document.querySelector("suit-top");
+  let topsuite = document.querySelector(".icon-top");
   topsuite.innerHTML = suite;
 
-  let bottomsuite = document.querySelector("suit-bottom");
+  let bottomsuite = document.querySelector(".icon-bottom");
   bottomsuite.innerHTML = suite;
 };

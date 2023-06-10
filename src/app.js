@@ -18,7 +18,12 @@ window.onload = function() {
 
   let topsuite = document.querySelector(".icon-top");
   topsuite.innerHTML = suite;
-
+  if (suite === "♥" || suite === "♦") {
+    topsuite.style.color = "red";
+  }
   let bottomsuite = document.querySelector(".icon-bottom");
   bottomsuite.innerHTML = suite;
+  if (suite === "♥" || suite === "♦") {
+    bottomsuite.style.color = "red";
+  }
 };

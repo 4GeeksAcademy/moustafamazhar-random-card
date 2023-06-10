@@ -5,7 +5,7 @@ import "./style.css";
 window.onload = function() {
   // console.log("Hello from the console!");
 
-  const suites = ["heart", "spade", "club", "tree"];
+  const suites = ["♥", "♠", "♣", "♦"];
 
   function randomCard(arr) {
     return Math.floor(Math.random() * arr.length);
@@ -15,9 +15,7 @@ window.onload = function() {
 
   let topsuite = document.querySelector("suit-top");
   topsuite.innerHTML = suite;
-};
 
-let bottomsuite =  document.querySelector("suit-bottom");
-bottomsuite.innerHTML = suite;
-
+  let bottomsuite = document.querySelector("suit-bottom");
+  bottomsuite.innerHTML = suite;
 };
